@@ -23,4 +23,8 @@ app.get('/*', (_, res)=>{
   res.sendStatus(404).json("page not found")
 });
 
+app.get('/', (_, res)=>{
+  res.send("home page")
+});
+
 app.listen(PORT, console.log(PORT))
